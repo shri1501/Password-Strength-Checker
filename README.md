@@ -1,7 +1,3 @@
-# Password-Strength-Checker
-simple Python program that checks the strength of a user’s password based on length, uppercase, lowercase, digit, and special characters.
-
-
 import os
 os.system("cls")
 password=input("Enter Your Password :")
