@@ -1,40 +1,16 @@
-import os
-os.system("cls")
-password=input("Enter Your Password :")
-import time
-time.sleep(1)
-print("loading .",end="\r")
-time.sleep(1)
-print("loading ..",end="\r")
-time.sleep(1)
-print("loading ...",end="\r")
-time.sleep(1)
-for char in password:
-    upper=False
-    if char.isupper():
-        upper=True
-        break
-for char in password:
-    lower=False
-    if char.islower():
-        lower=True
-        break
-for char in password:
-    digit=False
-    if char.isdigit():
-        digit=True
-        break
-for char in password:
-    spl=False
-    if char in '!@#$%^&*()_-=+':
-        spl=True
-        break
-length=False
-if len(password)>=8:
-    length=True
-if upper and lower and digit and spl and length:
-    print("Your Password is Strong")
-elif(upper+lower+digit+spl>=2):
-    print("Password Is Decent")
-else:
-    print("Password Is Weak You Must Strengthen Your Password")
+# Password Checker
+
+This is a Python program that checks the strength of a user's password based on multiple criteria: length, uppercase letters, lowercase letters, digits, and special characters.
+
+## How to Use
+
+1. Run the script.
+2. Enter your password when prompted.
+3. The program will evaluate and tell you if your password is strong, decent, or weak.
+
+## Requirements
+
+- Python 3.x
+- No external libraries required.
+
+## Example Output
